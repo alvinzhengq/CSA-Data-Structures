@@ -34,8 +34,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
-domain: alvinzhengq.github.io     # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://alvinzhengq.github.io/CSA-Data-Structures/  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /CSA-Data-Structures
+url: https://alvinzhengq.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 
 
 # Exclude from processing.
