@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 import tt0.Jobs.AddJob;
+import tt0.Jobs.Matrix;
+import tt0.Jobs.Print;
 import tt0.Jobs.Job;
 
 public class Terminal {

@@ -24,6 +24,19 @@ public class Matrix extends Job {
             sb.append("\n");
         }
 
+        sb.append("\n");
+        
+        for (int i = matrix.length - 1; i >= 0; i--) {
+            for (int j = matrix[i].length - 1; j >= 0; j--) {
+                if (matrix[i][j] == -1) {
+                    sb.append("  ");
+                } else {
+                    sb.append(matrix[i][j] + " ");
+                }
+            }
+            sb.append("\n");
+        }
+
         return sb.toString();
     }
 
@@ -40,6 +53,10 @@ public class Matrix extends Job {
     public void run(HashMap<Integer, Job> prompts) {
         this.matrix = keypad();
         System.out.println("Keypad:");
+        System.out.println(this);
+
+        this.matrix = numbers();
+        System.out.println("Number System:");
         System.out.println(this);
     }
 
