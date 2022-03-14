@@ -8,6 +8,11 @@ title: "AP CSA Trimester 3"
 
 # AP CSA Trimester 3
 
+## Weekly Review Ticketes
+
+- [Week 0](https://github.com/raad1masum/Drain-Gang/issues/2)
+
+
 ## Tech Talk Notes
 
 <ul>
