@@ -1,2 +1,6 @@
 .replit
 **/*.class
+
+.jekyll-cache/
+.vscode/
+assets/
