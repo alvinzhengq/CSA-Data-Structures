@@ -1,7 +1,6 @@
-name: 'Automatic build'
+name: 'pages-build'
 
-on:
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   continuous-delivery:
