@@ -107,7 +107,5 @@ public class Challenges {
                 System.out.println("Error");
                 break;
         }
-
-        s.close();
     }
 }
