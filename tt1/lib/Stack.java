@@ -1,7 +1,5 @@
 package tt1.lib;
 
-import tt1.lib.LinkedList;
-
 public class Stack<T>
 {
     private LinkedList<T> lifo;  // last in first out Object of stack

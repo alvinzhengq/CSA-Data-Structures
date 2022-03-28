@@ -56,42 +56,7 @@ public class Queue<T extends Comparable<T>> implements Iterable<T> {
         }
         System.out.println();
     }
-
-    public void mergeOrderedQueue(Queue<T> qq) {
-        LinkedList<T> q1 = this.head;
-        LinkedList<T> q2 = qq.head;
-
-        // add q1 to q2
-        while (q1 != null && q2 != null) {
-            if (q1.getData().compareTo(q2.getData()) < 0) {
-                LinkedList<T> temp = q1.getNext();
-                LinkedList<T> q2cur = q2;
-
-                q1.setNextNode(q2cur);
-                q2cur.setNextNode(temp);
-
-                q2 = q2.getNext();
-                q1 = temp;
-
-            } else {
-                q1 = q1.getNext();
-            }
-        }
-
-        if (q2 != null) {
-            this.tail.setNextNode(q2);
-            this.tail = qq.tail;
-        }
-
-        this.size += qq.size;
-
-        System.out.print("Data: ");
-        for (T t : this) {
-            System.out.print(t + " ");
-        }
-        System.out.println();
-    }
-
+    
     /**
      *  Returns the head object.
      *

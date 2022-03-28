@@ -31,7 +31,40 @@ public class Challenges {
         q2.add(6);
         q2.add(7);
 
-        q.mergeOrderedQueue(q2);
+        Queue<Integer> sortedQueue = new Queue<>();
+        while (true) {
+            if (q.getHead() != null && q2.getHead() != null) {
+                int a = q.getHead().getData();
+                int b = q2.getHead().getData();
+
+                if (a < b) {
+                    sortedQueue.add(a);
+                    q.delete();
+                } else {
+                    sortedQueue.add(b);
+                    q2.delete();
+                }
+                
+            } else {
+                while (q.getHead() != null) {
+                    sortedQueue.add(q.getHead().getData());
+                    q.delete();
+                }
+
+                while (q2.getHead() != null) {
+                    sortedQueue.add(q2.getHead().getData());
+                    q2.delete();
+                }
+
+                break;
+            }
+        }
+
+        System.out.print("Sorted Queue: ");
+        for (int i : sortedQueue) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
 
     static void challenge3() {
@@ -63,8 +96,7 @@ public class Challenges {
                 break;
 
             case 2:
-                System.out.println("Error");
-                // challenge2();
+                challenge2();
                 break;
 
             case 3:
@@ -72,6 +104,7 @@ public class Challenges {
                 break;
 
             default:
+                System.out.println("Error");
                 break;
         }
 
