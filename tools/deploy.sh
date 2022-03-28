@@ -8,7 +8,7 @@
 
 set -eu
 
-PAGES_BRANCH="gh-pages-prod"
+PAGES_BRANCH="pages-prod"
 
 SITE_DIR="_site"
 
@@ -119,7 +119,7 @@ deploy() {
 main() {
   init
   build
-  test
+  # test
   resume_site_dir
 
   if $_opt_dry_run; then
