@@ -49,8 +49,7 @@ public class Terminal {
             clear();
 
             if (selection == 0) {
-                scan.close();
-                System.exit(0);
+                return;
 
             } else if (prompts.containsKey(selection)) {
                 prompts.get(selection).run(prompts);
