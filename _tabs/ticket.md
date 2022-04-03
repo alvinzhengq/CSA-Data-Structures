@@ -17,3 +17,8 @@ order: 3
 ### Week 2 Review Ticket
 
 - [Ticket Link](https://github.com/alvinzhengq/CSA-Data-Structures/issues/2)
+
+
+### Week 3 Review Ticket
+
+- [Ticket Link](https://github.com/alvinzhengq/CSA-Data-Structures/issues/3)
