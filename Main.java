@@ -3,6 +3,7 @@ import java.util.Scanner;
 import tt0.Terminal;
 import tt1.Challenges;
 import tt2.Tester;
+import tt3.SortStats;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class Main {
             System.out.println("1. TT0 - Terminal Lab");
             System.out.println("2. TT1 - LinkedList Lab");
             System.out.println("3. TT2 - Calculator Lab");
+            System.out.println("4. TT3 - Sorts Lab");
             System.out.println("0. Exit");
 
             int choice = s.nextInt();
@@ -27,6 +29,10 @@ public class Main {
 
                 case 3:
                     Tester.main(args);
+                    break;
+
+                case 4:
+                    SortStats.main(args);
                     break;
 
                 case 0:
