@@ -11,9 +11,9 @@ order: 3
 
 ### Week 1 Review Ticket
 
-- [TODO](https://github.com/raad1masum/Drain-Gang/issues/)
+- [Ticket Link](https://github.com/alvinzhengq/CSA-Data-Structures/issues/1)
 
 
 ### Week 2 Review Ticket
 
-- [TODO](https://github.com/raad1masum/Drain-Gang/issues/)
+- [Ticket Link](https://github.com/alvinzhengq/CSA-Data-Structures/issues/2)
