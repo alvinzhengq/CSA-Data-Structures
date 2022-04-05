@@ -12,6 +12,7 @@ public class Calculator {
     private final Map<String, Integer> OPERATORS = new HashMap<>();
     {
         OPERATORS.put("^", 2);
+        OPERATORS.put(",", 2);
         OPERATORS.put("*", 3);
         OPERATORS.put("/", 3);
         OPERATORS.put("%", 3);
@@ -105,6 +106,9 @@ public class Calculator {
                         break;
                     case "^":
                         result = Math.pow(operand1, operand2);
+                        break;
+                    case ",":
+                        result = Math.sqrt((Math.pow(operand1, 2) + Math.pow(operand2, 2)));
                         break;
                 }
                 stack.push(result);
